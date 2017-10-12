@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <RootNamespace>K_Factor_Shared</RootNamespace>
+    <AssemblyName>K_Factor_Shared</AssemblyName>
+  </PropertyGroup>
+
+</Project>

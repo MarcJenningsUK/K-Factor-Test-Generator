@@ -1,0 +1,6 @@
+obj\Debug\Product.wixobj
+C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor Generator Installert\bin\Debug\K_Factor_Generator_Installert.msi
+C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor Generator Installert\bin\Debug\K_Factor_Generator_Installert.wixpdb
+obj\Debug\K-Factor Generator Installer.wixproj.BindContentsFileListnull.txt
+obj\Debug\K-Factor Generator Installer.wixproj.BindOutputsFileListnull.txt
+obj\Debug\K-Factor Generator Installer.wixproj.BindBuiltOutputsFileListnull.txt

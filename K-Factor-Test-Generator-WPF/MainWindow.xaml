@@ -1,0 +1,71 @@
+﻿<Window x:Class="K_Factor_Test_Generator_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:K_Factor_Test_Generator_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" MinHeight="350" Width="550" MinWidth="525" Icon="SplashScreen.png">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Settings" FontSize="16" />
+
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Nozzle Temperature" />
+            <TextBox Name="UserNozzle" Text="210" Margin="15,0,0,0" Grid.Column="1"/>
+            
+            <TextBlock Text="Bed Temperature" Grid.Row="1" />
+            <TextBox Name="UserBed" Text="50" Margin="15,0,0,0" Grid.Row="1" Grid.Column="1"/>
+
+            <TextBlock Text="Start K Value" Grid.Row="2" />
+            <TextBox Name="UserKStart" Text="0" Margin="15,0,0,0" Grid.Row="2" Grid.Column="1"/>
+
+            <TextBlock Text="End K Value" Grid.Row="3" />
+            <TextBox Name="UserKEnd" Text="100" Margin="15,0,0,0" Grid.Row="3" Grid.Column="1"/>
+
+        </Grid>
+
+        <Button Content="Generate" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="5" Grid.Row="2" Click="CreateGcode_Click"/>
+
+        <Button Content="Save" Name="Save" IsEnabled="False" Click="SaveButton_Click" Margin="5" VerticalAlignment="Top" Width="75" Grid.Row="2" HorizontalAlignment="Right"/>
+        
+        <StackPanel Grid.Row="3" VerticalAlignment="Bottom">
+            <TextBlock Text="Credits" FontSize="16" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Original script written by Sebastianv650 "/>
+                <Button Content=">" Name="SebastianLinkButton" Click="SebastianLinkButton_Click" Margin="15,0,0,0"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Full article by Matt Harrison" />
+                <Button Content=">" Name="MattLinkButton" Click="MattLinkButton_Click" Margin="15,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <TextBox Name="OutputTextBox" IsReadOnly="True" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto"/>
+        
+    </Grid>
+</Window>
