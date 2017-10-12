@@ -28,15 +28,8 @@
         <File Id="MainExeConfig" Source="..\K-Factor-Test-Generator-WPF\bin\$(var.Configuration)\K-Factor-Test-Generator-WPF.exe.config"/>
         <File Id="SharedDLL" Source="..\K-Factor-Test-Generator-WPF\bin\$(var.Configuration)\K_Factor_Shared.dll"/>
       </Component>
-      <!--<Component Id="myapplication.exe" Guid="PUT-GUID-HERE">
-        <File Id="myapplication.exe" Source="MySourceFiles\MyApplication.exe" KeyPath="yes" Checksum="yes"/>
-      </Component>
-      <Component Id="documentation.html" Guid="PUT-GUID-HERE">
-        <File Id="documentation.html" Source="MySourceFiles\documentation.html" KeyPath="yes"/>
-      </Component>-->
     </DirectoryRef>
 
-    <!-- Step 2: Add the shortcut to your installer package -->
     <DirectoryRef Id="ApplicationProgramsFolder">
       <Component Id="ApplicationShortcuts" Guid="D272B6F1-4C55-47A5-A6D9-FE68ECB1E2A5">
         <Shortcut Id="ApplicationStartMenuShortcut"
@@ -49,34 +42,5 @@
       </Component>
     </DirectoryRef>
     
-    
-    
-
-    <!--<Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="ProgramFilesFolder">
-        <Directory Id="INSTALLFOLDER" Name="K-Factor Generator">
-          <Component Id="ApplicationFiles" Guid="40012291-D5B7-453A-9967-B1ACCB5FFADF">
-            <File Id="MainExe" Source="..\K-Factor-Test-Generator-WPF\bin\$(var.Configuration)\K-Factor-Test-Generator-WPF.exe"/>
-            <File Id="MainExeConfig" Source="..\K-Factor-Test-Generator-WPF\bin\$(var.Configuration)\K-Factor-Test-Generator-WPF.exe.config"/>
-            <File Id="SharedDLL" Source="..\K-Factor-Test-Generator-WPF\bin\$(var.Configuration)\K_Factor_Shared.dll"/>
-          </Component>
-        </Directory>
-      </Directory>
-
-      <Directory Id="ProgramMenuFolder" >
-        <Directory Id="ProgramMenuSubfolder" Name="K-Factor Generator">
-          <Component Id="ApplicationShortcuts" Guid="D272B6F1-4C55-47A5-A6D9-FE68ECB1E2A5">
-            <Shortcut Id="ApplicationStartMenuShortcut"
-                    Name="K-Factor Generator"
-                    Description="K-Factor Generator"
-                    Target="[#MainExe]"
-                    WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
-            <RemoveFolder Id="CleanUpShortCut" Directory="ApplicationProgramsFolder" On="uninstall"/>
-            <RegistryValue Root="HKCU" Key="Software\Microsoft\K-Factor Generator" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
-          </Component>
-        </Directory>
-      </Directory>
-
-    </Directory>-->
 	</Product>
 </Wix>

@@ -1,7 +1,0 @@
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\bin\Debug\netstandard1.0\K-Factor-Shared.deps.json
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\bin\Debug\netstandard1.0\K-Factor-Shared.dll
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\bin\Debug\netstandard1.0\K-Factor-Shared.pdb
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\obj\Debug\netstandard1.0\K-Factor-Shared.csprojResolveAssemblyReference.cache
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\obj\Debug\netstandard1.0\K-Factor-Shared.AssemblyInfo.cs
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\obj\Debug\netstandard1.0\K-Factor-Shared.dll
-C:\Users\m.jennings\Documents\GitHub\K-Factor-Test-Generator\K-Factor-Shared\obj\Debug\netstandard1.0\K-Factor-Shared.pdb

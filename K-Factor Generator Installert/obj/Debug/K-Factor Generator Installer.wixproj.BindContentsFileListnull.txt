@@ -1,3 +1,0 @@
-..\K-Factor-Test-Generator-WPF\bin\Debug\K-Factor-Test-Generator-WPF.exe
-..\K-Factor-Test-Generator-WPF\bin\Debug\K-Factor-Test-Generator-WPF.exe.config
-..\K-Factor-Test-Generator-WPF\bin\Debug\K_Factor_Shared.dll
